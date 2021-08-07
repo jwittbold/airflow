@@ -211,7 +211,7 @@ We recommend using the ``psycopg2`` driver and specifying it in your SqlAlchemy 
 
 .. code-block:: text
 
-   postgresql+psycopg2://<user>:<password>@<host>/<db>
+   postgresql+psycopg2://<user>:<password>@<host>:<port>/<db>
 
 Also note that since SqlAlchemy does not expose a way to target a specific schema in the database URI, you may
 want to set a default schema for your role with a SQL statement similar to ``ALTER ROLE username SET search_path = airflow, foobar;``
